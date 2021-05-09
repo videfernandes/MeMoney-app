@@ -35,7 +35,7 @@ export class DespesaCreateComponent implements OnInit {
 
   create(): void {
     this.service.create(this.despesa, this.id_cat).subscribe((resposta) => {
-      this.router.navigate([`categorias/${this.id_cat}/livros`]);
+      this.router.navigate([`categorias/${this.id_cat}/despesas`]);
       this.service.mensagem("Despesa criada com sucesso!");
     }, err => {
       this.router.navigate([`categorias/${this.id_cat}/Despesa`]);
@@ -44,7 +44,7 @@ export class DespesaCreateComponent implements OnInit {
   }
 
   cancel(): void {
-    this.router.navigate([`categorias/${this.id_cat}/livros`]);
+    this.router.navigate([`categorias/${this.id_cat}/despesas`]);
   }
 
   getMessage() {

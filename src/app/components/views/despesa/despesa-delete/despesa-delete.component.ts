@@ -43,11 +43,11 @@ export class DespesaDeleteComponent implements OnInit {
 
   delete():void {
     this.service.delete(this.despesa.id!).subscribe(() => {
-      this.router.navigate([`categorias/${this.id_cat}/livros`]);
+      this.router.navigate([`categorias/${this.id_cat}/despesas`]);
       this.service.mensagem('Despesa deletada com sucesso!')
     }, err => {
-      this.router.navigate([`categorias/${this.id_cat}/livros`]);
-      this.service.mensagem('Falha ao deletar livro! Tente mais tarde..')
+      this.router.navigate([`categorias/${this.id_cat}/despesas`]);
+      this.service.mensagem('Falha ao deletar despesa! Tente mais tarde..')
     })
   }
 
