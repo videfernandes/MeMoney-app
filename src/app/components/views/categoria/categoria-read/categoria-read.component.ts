@@ -11,7 +11,7 @@ import { CategoriaService } from "../categoria.service";
 export class CategoriaReadComponent implements OnInit {
 
   categorias: Categoria[] = [];
-  displayedColumns: string[] = ["id", "nome", "descricao", "livros", "acoes"];
+  displayedColumns: string[] = ["id", "nome", "descricao", "despesas", "acoes"];
 
   constructor(private service: CategoriaService, private router: Router) {}
 
