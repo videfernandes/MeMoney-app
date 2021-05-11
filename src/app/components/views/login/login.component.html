@@ -8,7 +8,7 @@
         <tr>
           <td>
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Usuário" [(ngModel)]="username" name="username" required>
+              <input matInput type="email" placeholder="Usuário" [(ngModel)]="username" name="username" required>
             </mat-form-field>
           </td>
         </tr>
@@ -22,7 +22,7 @@
         </tr>
       </table>
     </form>
-    <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+
   </mat-card-content>
   <mat-card-actions>
     <button mat-raised-button (click)="login()" color="primary">Login</button>

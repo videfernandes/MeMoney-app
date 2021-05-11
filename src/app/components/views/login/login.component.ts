@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {}
 
   login(): void {
-    if (this.username == "admin" && this.password == "admin") {
+    if (this.username === "admin@admin" && this.password === "admin") {
       this.router.navigate(["home"]);
     } else {
       alert("Senha ou usuário incorretos");

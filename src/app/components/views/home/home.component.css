@@ -7,9 +7,6 @@
   margin: 2rem;
 }
 
-.btn-large {
-}
-
 @media (max-width: 450px) {
   .home {
     width: 70%;
