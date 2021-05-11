@@ -11,11 +11,16 @@ import { DespesaReadAllComponent } from './components/views/despesa/despesa-read
 import { DespesaReadComponent } from './components/views/despesa/despesa-read/despesa-read.component';
 import { DespesaUpdateComponent } from './components/views/despesa/despesa-update/despesa-update.component';
 import { HomeComponent } from './components/views/home/home.component';
+import { LoginComponent } from './components/views/login/login.component';
 
 
 const routes: Routes = [
   {
     path: '',
+    component: LoginComponent
+  },
+  {
+    path: 'home',
     component: HomeComponent
   },
   {

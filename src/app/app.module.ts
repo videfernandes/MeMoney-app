@@ -1,3 +1,4 @@
+import { UsuarioComponent } from './components/views/usuario/usuario.component';
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
@@ -31,7 +32,8 @@ import { DespesaReadAllComponent } from "./components/views/despesa/despesa-read
 import { DespesaUpdateComponent } from "./components/views/despesa/despesa-update/despesa-update.component";
 import { DespesaDeleteComponent } from "./components/views/despesa/despesa-delete/despesa-delete.component";
 import { DespesaReadComponent } from "./components/views/despesa/despesa-read/despesa-read.component";
-
+import { LoginComponent } from './components/views/login/login.component';
+//import {InputTextModule} from 'primeng/inputtext';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,12 +45,13 @@ import { DespesaReadComponent } from "./components/views/despesa/despesa-read/de
     CategoriaCreateComponent,
     CategoriaDeleteComponent,
     CategoriaUpdateComponent,
-   DespesaReadAllComponent,
-    DespesaCreateComponent,
-    
+    DespesaReadAllComponent,
+    DespesaCreateComponent,    
    DespesaUpdateComponent,
    DespesaDeleteComponent,
    DespesaReadComponent,
+   LoginComponent,
+   UsuarioComponent
   ],
   imports: [
     BrowserModule,
